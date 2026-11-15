@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <title>A.I Foods</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&family=Italiana&family=Oswald&display=swap">
+</head>
+<body>
+  <!-- Welcome -->
+  <section class="welcome-sec">
+      <div>Welcome To <span id="restaurant-name">A.I. Foods</span> Official Website</div>
+  </section>
+  <header>
+      <div class="restaurant-name">A.I. Foods</div>
+      <div class="navigator">
+        <div class="home-nav nav" onclick="changePage('home'); addBottomBorder('.home-nav');">HOME</div>
+        <div class="about-nav nav" onclick="changePage('about'); addBottomBorder('.about-nav');">ABOUT US</div>
+        <div class="menu-nav nav" onclick="changePage('menu'); addBottomBorder('.menu-nav');">MENU</div>
+        <div class="reservations-nav nav" onclick="changePage('reservations'); addBottomBorder('.reservations-nav');">RESERVATIONS</div>
+        <div class="contact-nav nav" onclick="changePage('contact'); addBottomBorder('.contact-nav');">CONTACT</div>
+      </div>
+  </header>
+  <!-- Page 1:Home -->
+  <div class="page active" id="home">
+    <section class="hero">
+      <p class="hero-text">DISCOVER YOUR NEW FAVOURITE FOOD</p>
+      <div class="hero-2nd-text">
+        <p>Come and eat well with our delicious & healthy foods.</p>
+        <button onclick="changePage('menu'); addBottomBorder('.menu-nav');">Show Menu</button>
+      </div>
+    </section>
+    <section class="home-about">
+      <img src="the-restaurant.jpg" class="pic1">
+      <img src="cooks.jpg" class="pic2">
+      <p class="home-about-text">THE RESTAURANT</p>
+      <div class="home-about-div">
+        <p class="home-about-main-text">A.I. Foods nah home of authentic Nigerian food. From our kitchen to your table, every plate na fresh, tasty, and made like mama own.</p>
+        <button class="to-about" onclick="changePage('about'); addBottomBorder('.about-nav');">READ MORE</button>
+      </div>
+    </section>
+    <section class="home-foods">
+      <div class="foods-text">
+        <p class="big-p">WHAT WE MAKE</p>
+        <p class="small-p">Come and eat well with our delicious & healthy foods.</p>
+      </div>
+      <div class="home-main-foods">
+        <img src="menu1.jpg">
+        <img src="menu2.jpg">
+        <img src="menu3.jpg">
+      </div>
+      <button onclick="changePage('menu'); addBottomBorder('.menu-nav');">Show Menu</button>
+    </section>
+    <section class="home-reservation">
+      <div class="home-reserve-text">
+        <p class="big-p">MAKE A RESERVATION </p>
+        <p class="small-p">Come and eat well with our delicious & healthy foods.</p>
+      </div>
+      <div class="home-reserve-main">
+        <div class="home-reserve-story">
+          No need to rush, no need to wait.
+          Your table is already waiting for you.
+          Come hungry, leave happy.
+          Taste the amala, feel the ewedu,
+          Enjoy the jollof, hot from our kitchen.
+          At A.I. Foods, every seat is a celebration.
+          Reserve yours today — your feast is ready.
+        </div>
+        <div class="home-reserve-inputs">
+        <div>
+          <p>PEOPLE</p>
+          <input type="number" name="people" id="">
+        </div>
+        <div>
+          <p>DATE</p>
+          <input type="date" name="date" id="">
+        </div>
+        <div>
+          <p>TIME</p>
+          <input type="time" name="time" id="">
+        </div>
+        <button onclick="changePage('reservations'); addBottomBorder('.reservations-nav');">BOOK A TABLE</button>
+      </div>
+    </section>
+  </div>
+  
+  <!--Page 2:About Us-->
+  <div class="page" id="about">
+    <div class="about1">
+      <p class="about11">ABOUT US</p>
+      <p class="about12">Our Story,Our Flavour</p>
+    </div>
+    <div class="about2">
+      <img src="outer.jpg">
+      <img src="cooks.jpg">
+    </div>
+    <div>
+      <p class="about-story1">Our Story, Our Flavour</p>
+
+      <p class="about-story2">A.I. Foods started from one simple love: mama food.
+
+        We wanted a place where you fit eat real Nigerian food — no stress, no long wait, just fresh food wey go make you smile.
+
+        Every morning, we cook fresh. No yesterday food. From our amala + ewedu + gbegiri, to our smoky jollof rice with chicken, fried rice with turkey, ofada with ayamase, pounded yam with egusi, and pepper soup with catfish — everything is made like home.
+
+        We no dey rush our food. We cook am with patience, with fresh pepper, fresh ingredients, and plenty love. Na why our ewedu dey draw well, our amala dey soft, our jollof dey smoky, and our soups dey rich and tasty.
+
+        Whether na family lunch, date night, birthday, or you just dey crave something tasty after long day — your table dey wait for you.
+
+        You fit sit down and enjoy for our restaurant, or order on WhatsApp and we go deliver sharp sharp to your door.
+
+        At A.I. Foods, you no be just customer. You be family.</p>
+
+      <p class="about-story3">Fresh Daily. Made With Love. Fast Service.</p>
+
+      <p class="about-story4">Happiness Is Homemade.</p>
+    </div>
+    <div class="about4">
+      <div><p class="div-p">FRESH DAILY</p><p class="div-p2">100% fresh ingredients</p></div>
+      <div><p class="div-p">MADE WITH LOVE</p><p class="div-p2">100% fresh ingredients</p></div>
+      <div><p class="div-p">FAST SERVICE</p><p class="div-p2">100% fresh ingredients</p></div>
+    </div>
+    <div class="about5">
+      <button onclick="changePage('menu'); addBottomBorder('.menu-nav');">Show Menu</button>
+    </div>
+  </div>
+  
+  <!-- Page 3:Menu-->
+  <div class="page" id="menu">
+    <div>
+      <p class="menu-text1">OUR MENU</p>
+      <p class="menu-text2">Pick your favourite.All fresh.</p>
+    </div>
+  <div class="menu">
+    <div>
+      <img src="menu1.jpg">
+      <p class="menu-name">Egusi with Pounded Yam</p>
+      <p class="price">₦4,500</p>
+    </div>
+    <div>
+      <img src="menu2.jpg">
+      <p class="menu-name">Amala + Ewedu + Gbegiri</p>
+      <p class="price">₦5,000</p>
+    </div>
+    <div>
+      <img src="menu3.jpg">
+      <p class="menu-name">Jollof Rice with Chicken</p>
+      <p class="price">₦5,500</p>
+    </div>
+    <div>
+      <img src="menu4.jpg">
+      <p class="menu-name">Okra Soup with Eba</p>
+      <p class="price">₦4,000</p>
+    </div>
+    <div>
+      <img src="menu5.jpg">
+      <p class="menu-name">Akara + Pap</p>
+      <p class="price">₦3,000</p>
+    </div>
+    <div>
+      <img src="menu6.jpg">
+      <p class="menu-name">Suya - Grilled Meet Skewers</p>
+      <p class="price">₦3,000</p>
+    </div>
+    <div>
+      <img src="menu7.jpg">
+      <p class="menu-name">Fried Rice and Plantain</p>
+      <p class="price">₦4,500</p>
+    </div>
+    <div>
+      <img src="menu8.jpg">
+      <p class="menu-name">Oha Soup(Ofe Oha)</p>
+      <p class="price">₦4,000</p>
+    </div>
+    <div>
+      <img src="menu9.jpg">
+      <p class="menu-name">Catfish Pepper Soup</p>
+      <p class="price">₦3,500</p>
+    </div>
+    <div>
+      <img src="menu10.jpg">
+      <p class="menu-name">Nkwobi - Spicy Cow Foot</p>
+      <p class="price">₦5,000</p>
+    </div>
+    <div>
+      <img src="menu11.jpg">
+      <p class="menu-name">Ofada Rice + Ayamase Sauce</p>
+      <p class="price">₦4,000</p>
+    </div>
+    <div>
+      <img src="menu12.jpg">
+      <p class="menu-name">Moi Moi</p>
+      <p class="price">₦3,500</p>
+    </div>
+  </div>
+  <div class="menu-order">
+    <a href="https://wa.me/2347036149544?text=Hello%20A.I.%20Foods%2C%20I%20want%20to%20order">ORDER ON WHATSAPP</a>
+  </div>
+  </div>
+  
+  <!-- Page 4:Reservations-->
+  <div class="page" id="reservations">
+    <div class="table-booked">TABLE BOOKED</div>
+    <div class="reservations-text">
+      <p class="res1">RESERVATIONS</p>
+      <p class="res2">Book your table in 1 minute.</p>
+      <p class="res3">No need to rush, no need to wait.</p>
+      <p class="res3">Your table is already waiting.</p>
+      <p class="res3">Reserve yours today.</p>
+    </div>
+    <div class="reservations-main">
+      <div class="reservations-inputs-div">
+        <p>YOUR NAME</p>
+        <input type="text" name="customer-name">
+      </div>
+      <div class="reservations-inputs-div">
+        <p>HOW MANY PEOPLE?</p>
+        <input type="number" name="number-of-people">
+      </div>
+      <div class="reservations-inputs-div">
+        <p>DATE</p>
+        <input type="date" name="reservation-date">
+      </div>
+      <div class="reservations-inputs-div">
+        <p>TIME</p>
+        <input type="time" name="reservation-time">
+      </div>
+      <div class="reservations-inputs-div">
+        <p>ANY SPECIAL REQUEST?</p>
+        <textarea name="reservation-request" id= rows="10" cols="40"></textarea>
+      </div> 
+      <div class="button-div">
+        <button class="final-booking" onclick="appearBooked();">BOOK A TABLE</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Page 5:Contact-->
+  <div class="page" id="contact">
+    <div class="contact1">
+      <p class="contact11">CONTACT US</p>
+      <p class="contact12">We are here for you.</p>
+    </div>
+    <div class="contact-main">
+      <div>
+        <p class="cm1">VISIT US</p>
+        <p class="cm2">123, Not Real St.</p>
+        <p class="cm3">Dev A.I City</p>
+      </div>
+      <div>
+        <p class="cm1">CALL/WHATSAPP</p>
+        <p class="cm2">0901 351 2092</p>
+        <p class="cm3">Mon - Sun:8am - 10pm</p>
+      </div>
+      <div>
+        <p class="cm1">EMAIL US</p>
+        <p class="cm2">afeezi618@gmail.com</p>
+        <p class="cm3">We reply in 1 hour.</p>
+      </div>
+    </div>
+    <div class="contact-message">
+      <p>SEND US A MESSAGE</p>
+      <input type="text" name="contactmessage" class="" placeholder="Your message...">
+    </div>
+  </div>
+  
+  <!--Footer-->
+  <footer>
+    <div class="foot1">
+      <p class="foot11">A.I. Foods</p>
+      <p class="foot12">HAPPINESS IS HOMEMADE</p>
+      <p class="foot13">Come and eat well with our delicious & healthy foods</p>
+    </div>
+    <div class="foot2">
+      <div class="foot21">EXPLORE</div>
+      <p class="foot22" onclick="changePage('home'); addBottomBorder('.home-nav');">Home</p>
+      <p class="foot23" onclick="changePage('about'); addBottomBorder('.about-nav');">About Us</p>
+      <p class="foot24" onclick="changePage('menu'); addBottomBorder('.menu-nav');">Menu</p>
+      <p class="foot25" onclick="changePage('reservations'); addBottomBorder('.reservations-nav');">Reservations</p>
+      <p class="foot26" onclick="changePage('contact'); addBottomBorder('.contact-nav');">Contact</p>
+    </div>
+    <div class="foot3">
+      <p class="foot31">RESERVE NOW!</p>
+      <p>123,Not Real St.,Dev A.I city.</p>
+      <p>afeezi618@gmail.com</p>
+      <a href="https://wa.me/2347036149544?text=Hello%20A.I.%20Foods%2C%20I%20want%20to%20order" class="foot3a">Order Now!</a>
+    </div>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
