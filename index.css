@@ -663,7 +663,7 @@ footer{
   .home-about .home-about-text{ position: static; width: 100%; text-align: center; }
   .home-about .home-about-div{ position: static; width: 100%; align-items: center; text-align: center; }
   .home-about .home-about-div .home-about-main-text{ display: block !important; width: 100%; }
-  .home-foods .home-main-foods{ grid-template-columns: 1fr; }
+  .home-foods .home-main-foods{ grid-template-columns: 1fr 1fr 1fr; }
   .home-reserve-main{ grid-template-columns: 1fr; margin: 0 15px; }
   .menu{ grid-template-columns: 1fr; }
   footer{ grid-template-columns: 1fr; text-align: center; }
